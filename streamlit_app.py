@@ -297,7 +297,7 @@ def main():
     
 
     # Add a file uploader to upload the input Excel file
-    uploaded_file = st.file_uploader('It can work with a large number of customer data by uploading a file here.', type=['csv', 'xls','xlsx'])
+    uploaded_file = st.file_uploader('It can also work on a large number of customer data by uploading a file here you will get costomers segments.', type=['csv', 'xls','xlsx'])
 
     if uploaded_file is not None:
         # Read the uploaded Excel file
