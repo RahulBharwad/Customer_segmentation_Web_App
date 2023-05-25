@@ -293,11 +293,11 @@ def main():
     # Set Streamlit app title
     st.title('Customer Personality Analysis')    
     
-    
+    st.text("For individual use, please fill form from side bar")
     
 
     # Add a file uploader to upload the input Excel file
-    uploaded_file = st.file_uploader('If we use form to get individual data from user our model will not work on individal(1) data because our model creates 4 clusters and the number of row of data we are applying in model is 1 & to create 4 clusters we atleast require 4 data or more then 4, so use below mension type file to get clusters', type=['csv', 'xls','xlsx'])
+    uploaded_file = st.file_uploader('It can work with a large number of customer data by uploading a file here.', type=['csv', 'xls','xlsx'])
 
     if uploaded_file is not None:
         # Read the uploaded Excel file
